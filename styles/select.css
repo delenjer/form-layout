@@ -1,0 +1,38 @@
+.select-container {
+  position: relative;
+}
+
+.select-options {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: 15rem;
+  background-color: var(--white-color);
+  border-radius: 0.5rem;
+  border: 1px solid var(--white-color);
+  box-shadow: 0 4px 15px 0 rgba(0, 0, 0, 0.30);
+  z-index: 100;
+  overflow-y: scroll;
+}
+
+.select-item {
+  font-size: 15px;
+  font-weight: 300;
+  color: #5E5E5E;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.select-item:hover {
+  color: #212121;
+}
+
+.select-item:not(:last-of-type) {
+  margin-bottom: 1.5rem;
+}
+
+.select-container .select-options {
+  padding: 2.1rem 2.3rem;
+}

@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Form layout</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;500&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./styles/reset-css.css">
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/select.css">
+    <link rel="stylesheet" href="./styles/form.css">
+  </head>
+
+  <body>
+    <main class="main">
+      <div class="bg-figure bg-figure-1"></div>
+      <div class="bg-figure bg-figure-2"></div>
+      <div class="bg-figure bg-figure-3"></div>
+
+      <section>
+        <div class="logo-box">
+          <img class="logo" src="./images/icons/logo.svg" alt="Logo">
+        </div>
+
+        <h2 class="title">
+          <span class="title-text">Sign Up</span>
+          and find the best place to rest while traveling
+        </h2>
+
+        <form action="#" class="form">
+          <div class="form-container">
+            <div class="field-container">
+              <label class="field">
+                <span class="icon-box">
+                  <img class="icon" src="./images/icons/u_user.svg" alt="User icon">
+                </span>
+
+                  <span class="field-box">
+                    <input
+                      class="input-field input-action"
+                      type="text"
+                      name="firstName"
+                      placeholder=" "
+                    >
+
+                    <span class="hint-field">First Name</span>
+                  </span>
+              </label>
+
+              <span data-error="firstName" class="error">
+                The name must be more than 2 characters
+              </span>
+            </div>
+
+            <div class="field-container">
+              <label class="field">
+                <span class="icon-box">
+                  <img class="icon" src="./images/icons/u_users-alt.svg" alt="User icon">
+                </span>
+
+                <span class="field-box">
+                  <input class="input-field input-action" type="text" name="secondName" placeholder=" ">
+
+                  <span class="hint-field">Second Name</span>
+                </span>
+              </label>
+
+              <span data-error="secondName" class="error">
+                The name must be more than 2 characters
+              </span>
+            </div>
+
+            <div class="select-container">
+              <label class="field field-country">
+                <span class="icon-box">
+                  <img class="icon" src="./images/icons/map-marker.svg" alt="User icon">
+                </span>
+
+                  <span class="field-box">
+                  <input
+                    class="input-field input-action input-field-country"
+                    type="text"
+                    name="country"
+                    placeholder=" "
+                  >
+
+                  <span class="hint-field">Country</span>
+                </span>
+              </label>
+
+              <ul class="select-options">
+                <li class="select-item">Afghanistan</li>
+                <li class="select-item">Albania</li>
+              </ul>
+
+              <span data-error="country" class="error">
+                Fill in the field
+              </span>
+            </div>
+
+            <div class="field-container">
+              <label class="field">
+                <span class="icon-box">
+                  <img class="icon" src="./images/icons/phone.svg" alt="User icon">
+                </span>
+
+                  <span class="field-box">
+                    <input
+                      class="input-field input-action input-field-phone"
+                      type="text"
+                      name="phone"
+                      placeholder=" "
+                    >
+
+                    <span class="hint-field">Phone</span>
+                  </span>
+                </label>
+
+                <span data-error="phone" class="error">
+                  Fill in the field
+                </span>
+            </div>
+
+            <div class="field-container">
+              <label class="field">
+                <span class="icon-box">
+                  <img class="icon" src="./images/icons/lock.svg" alt="User icon">
+                </span>
+
+                  <span class="field-box">
+                    <input
+                      class="input-field input-action input-field-pass"
+                      type="password"
+                      name="password"
+                      placeholder=" "
+                    >
+
+                  <span class="hint-field">Password</span>
+                </span>
+              </label>
+
+              <span data-error="password" class="error">
+                Password must have 1 letter, 1 number and one symbol.
+              </span>
+            </div>
+
+            <div class="field-container">
+              <label class="field">
+                <span class="icon-box">
+                  <img class="icon" src="./images/icons/lock-confirm.svg" alt="User icon">
+                </span>
+
+                  <span class="field-box">
+                    <input
+                      class="input-field input-action"
+                      type="password"
+                      name="passwordConfirm"
+                      placeholder=" "
+                    >
+
+                    <span class="hint-field">Confirm password</span>
+                  </span>
+              </label>
+
+              <span data-error="passwordConfirm" class="error">
+                Password does not match
+              </span>
+            </div>
+
+            <div class="field-container">
+              <label class="field">
+                <span class="icon-box">
+                  <img class="icon" src="./images/icons/email.svg" alt="User icon">
+                </span>
+
+                  <span class="field-box">
+                  <input
+                    class="input-field input-action"
+                    type="email"
+                    name="email"
+                    placeholder=" "
+                  >
+
+                  <span class="hint-field">Email</span>
+                </span>
+              </label>
+
+              <span data-error="email" class="error">
+                Email is not correct
+              </span>
+            </div>
+
+            <div class="info">
+              <label class="checkbox-container">
+                <input class="checkbox input-action" name="checkbox" type="checkbox">
+                <span class="custom-checkbox"></span>
+              </label>
+
+              <p class="info-text">
+                I agree to the
+                <a class="info-text-link" href="#">Terms & Conditions</a>
+              </p>
+            </div>
+          </div>
+
+          <button type="submit" class="button">
+            Sign Up
+          </button>
+        </form>
+      </section>
+
+      <div class="footer">
+        <p class="info-text">
+          If you have an account,
+          <a class="info-text-link" href="#">Log In</a>
+        </p>
+      </div>
+    </main>
+
+    <script src="./js/index.js"></script>
+    <script src="./js/form-validation.js"></script>
+    <script src="https://unpkg.com/imask"></script>
+  </body>
+</html>
