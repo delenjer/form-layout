@@ -26,7 +26,6 @@ button.addEventListener('click', (e) => {
   e.preventDefault();
 
   let passwordText = '';
-  let allFieldsValid = false;
 
   fields.forEach(field => {
     switch (field.name) {
