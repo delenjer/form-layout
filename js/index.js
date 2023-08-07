@@ -6,6 +6,7 @@ const selectOptions = document.querySelector('.select-options');
 const fieldPhone = document.querySelector('.input-field-phone');
 const fieldCountry = document.querySelector('.field-country');
 let mask;
+fieldPhone.disabled = true;
 
 const phoneList = {
   'Afghanistan': '+{93}(000)000-00-00',
@@ -21,6 +22,8 @@ function toggleOptions(event) {
 }
 
 function phoneMask(val) {
+  fieldPhone.disabled = false;
+
   const maskOptions = {
     mask: phoneList[val],
     lazy: false,
